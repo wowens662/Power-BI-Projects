@@ -1,0 +1,20 @@
+The source file was Data Professional Survey.csv, which contained survey data of 
+630 individuals employed in data-centric IT fields.
+
+Data was first loaded in Power Query to perform data cleaning.  Unnecessary columns were deleted.  The "current role" question/field had hundreds of options under the designation of "Other", so all of those were consolidated into one collective "Others" value.  The same procedure was applied to "Industry", "Favorite Programming Language", and "Country" question/fields.
+The "salary" field/question which contained a range (ex. 0-40k) was cleaned and transformed by splitting the columns and taking the average, storing the value in custom column named "Average Salary".  
+
+In total, there were 630 survey participants.  
+The average age of participants was 30.
+When it comes to avg. salary by job title, data scientists are earning the most
+by far, with salaries approaching the 100k range.  Data engineers come in second, making close to 65k.  Data architects are averaging close to 63k, with data analysts
+averaging around 55k; this value is perhaps the most accurate because the majority of survey takers were in data analyst field.
+
+Python is the overwhelming favorite programming language among participants and is most widely used across the data job roles. 
+
+A tree map is used to filter the data results by individual country.  As we do so, we find that salaries change dramatically, showing dramatic a decrease in some regions.  However this is likely due to fact they have a lower cost of living and their currency may be weaker relative to other countries in the survey. Plus, the fact survey was done in USD, which is stronger than most foreign currencies.
+
+Two gauge charts display work/life balance and salary satisfaction sentiments.  The average person is happy with work/life balance, giving an average rating of 5.74/10.
+However survey takers only rate their salary satisfaction at 4.27/10.
+
+Also, with regards to landing a role in the data profession, 42.7% of participants claim that it was "neither easy nor difficult", suggesting that work ethic and desire to learn are the keys to success in a data role.
